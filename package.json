@@ -1,0 +1,16 @@
+{
+  "name": "tik-tok-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "caliph-api": "^0.9.4",
+    "dotenv": "^16.0.3",
+    "telegraf": "^4.9.2"
+  }
+}
