@@ -4,7 +4,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 const caliph_api = require('caliph-api');
 
 bot.start((ctx) => ctx.replyWithPhoto({source: './savetiklogo.png'}, {parse_mode: "HTML", caption: 'Приветствую!\nСкинь ссылку на видео из Тик-Тока а бот скинет тебе видео\n<a href="https://t.me/dimesproduction">DIMES PRODUCTION</a>'}));
-bot.help((ctx) => ctx.replyWithHTML('/start - запуск бота\nПоддержка - <a href="https://t.me/dimesproduction">DIMES PRODUCTION</a>'));
+bot.help((ctx) => ctx.replyWithHTML('/start - запуск бота\nПоддержка - <a href="https://t.me/dimesproduction">DIMES PRODUCTION</a>', {disable_web_page_preview: true}));
 bot.launch({dropPendingUpdates: true});
 
 let msgText;
