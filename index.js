@@ -57,7 +57,7 @@ bot.on("message", async (ctx) => {
             return
         } 
     }catch(e) {
-        return await ctx.reply('😕 Мне не удалось скачать данное видео...', {reply_to_message_id: ctx.message.message_id})
+        console.error(e);
     }
 })
 
